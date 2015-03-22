@@ -1,0 +1,53 @@
+div{
+	width: 1064px;
+	height: 300px;
+}
+.clouds{
+	margin: 0 auto;
+	background-image: url('clouds.png');
+	background-repeat: no-repeat;
+	position: relative;
+	-webkit-animation-name: clouds;
+	-webkit-animation-duration: 15s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+}
+.welker{
+	background-image: url('welker.png');
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.shark{
+	background-image: url('shark.png');
+	background-repeat: no-repeat;
+	-webkit-animation-name: shark;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-iteration-count: 1;
+}
+.freshness{
+	background-image: url('freshness.png');
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.old-spice{
+	background-image: url('old-spice.png');
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+/*@-webkit-keyframes clouds{
+	from{
+		background-position: right;
+	}
+	to{
+		background-position: left;
+	}
+}
+@-webkit-keyframes shark{
+	from{
+		background-position: 370px;
+	}
+	to{
+		background-position: right;
+	}
+}*/
