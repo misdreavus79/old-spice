@@ -7,6 +7,7 @@ div{
 	background-image: url('clouds.png');
 	background-repeat: no-repeat;
 	position: relative;
+	overflow: hidden;
 	-webkit-animation-name: clouds;
 	-webkit-animation-duration: 15s;
 	-webkit-animation-iteration-count: infinite;
@@ -34,6 +35,23 @@ div{
 	background-repeat: no-repeat;
 	background-position: left top;
 }
+.sign{
+	position: absolute;
+	right: 65px;
+	bottom: -5px;
+	transform-origin: 64px 150px;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: translateZ(0) scale(1.0, 1.0);
+	-webkit-animation-name: signTransitionIn;
+	-webkit-animation-duration: 1.2s;
+	-webkit-animation-iteration-count: 1;
+}
+.sign:hover{
+	-webkit-animation-name: sign;
+	-webkit-animation-duration: 1.2s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-timing-function: ease-out;
+}
 
 /*@-webkit-keyframes clouds{
 	from{
@@ -49,5 +67,22 @@ div{
 	}
 	to{
 		background-position: right;
+	}
+}
+@-webkit-keyframes sign{
+	from{
+		transform: rotate(0deg);
+	}
+	10%{
+		transform: rotate(10deg);
+	}
+	30%{
+		transform: rotate(-10deg);
+	}
+	60%{
+		transform: rotate(5deg);
+	}
+	to{
+		transform: rotate(0deg);
 	}
 }*/
