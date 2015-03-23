@@ -25,10 +25,11 @@ div{
 .shark{
 	background-image: url('shark.png');
 	background-repeat: no-repeat;
+	background-position: 370px;
 	-webkit-animation-name: shark;
 	-webkit-animation-duration: 1s;
 	-webkit-animation-iteration-count: 1;
-	/*-webkit-animation-delay: 5s;*/
+	-webkit-animation-delay: 5s;
 }
 .freshness{
 	background-image: url('freshness.png');
@@ -39,21 +40,22 @@ div{
 	background-image: url('old-spice.png');
 	background-repeat: no-repeat;
 	background-position: left top;
+	width: 0;
 	-webkit-animation-name: old-spice;
 	-webkit-animation-duration: 2.5s;
 	-webkit-animation-iteration-count: 1;
-	/*-webkit-animation-delay: 5s;*/
+	-webkit-animation-delay: 5s;
 }
 .sign{
 	position: absolute;
 	right: 65px;
-	bottom: -5px;
+	bottom: -130px;
 	transform-origin: 64px 150px;
 	-webkit-backface-visibility: hidden;
 	-webkit-animation-name: signTransitionIn;
 	-webkit-animation-duration: 1.2s;
 	-webkit-animation-iteration-count: 1;
-	/*-webkit-animation-delay: 5s;*/
+	-webkit-animation-delay: 7.5s;
 }
 .sign:hover{
 	-webkit-animation-name: sign;
@@ -67,6 +69,7 @@ div{
 }
 .palms{
 	position: absolute;
+	visibility: hidden;
 	-webkit-animation-duration: .5s;
 	-webkit-animation-iteration-count: 1;
 	-webkit-animation-timing-function: ease-out;
@@ -83,21 +86,21 @@ div{
 	top: 25px;
 	transform-origin: 1px 47px;
 	-webkit-animation-name: right-shake;
-	-webkit-animation-delay: 5s;
+	-webkit-animation-delay: 7s;
 }
 .lfrp-top{
 	left: 72px;
 	top: 32px;
 	transform-origin: 1px 49px;
 	-webkit-animation-name: right-shake;
-	-webkit-animation-delay: 5s;
+	-webkit-animation-delay: 7s;
 }
 .lfrp-bottom{
 	left: 89px;
 	top: 67px;
 	transform-origin: 0 21px;
 	-webkit-animation-name: right-shake;
-	-webkit-animation-delay: 5s;
+	-webkit-animation-delay: 9s;
 }
 .rblp-top{
 	left: 389px;
@@ -105,7 +108,7 @@ div{
 	transform-origin: 79px 46px;
 	-webkit-animation-name: rblp-top;
 	-webkit-animation-name: left-shake;
-	-webkit-animation-delay: 5s;
+	-webkit-animation-delay: 9s;
 }
 .rblp-bottom{
 	left: 374px;
@@ -113,7 +116,7 @@ div{
 	transform-origin: 85px 21px;
 	-webkit-animation-name: rblp-bottom;
 	-webkit-animation-name: left-shake;
-	-webkit-animation-delay: 5s;
+	-webkit-animation-delay: 11s;
 }
 .rflp-top{
 	left: 464px;
@@ -121,7 +124,7 @@ div{
 	transform-origin: 71px 30px;
 	-webkit-animation-name: rflp-top;
 	-webkit-animation-name: left-shake;
-	-webkit-animation-delay: 5s;
+	-webkit-animation-delay: 13s;
 }
 .rflp-bottom{
 	left: 450px;
@@ -129,21 +132,21 @@ div{
 	transform-origin: 80px 22px;
 	-webkit-animation-name: rflp-bottom;
 	-webkit-animation-name: left-shake;
-	-webkit-animation-delay: 5s;
+	-webkit-animation-delay: 15s;
 }
 .rfrp-top{
 	left: 545px;
 	top: 30px;
 	transform-origin: 0 36px;
 	-webkit-animation-name: right-shake;
-	-webkit-animation-delay: 5s;
+	-webkit-animation-delay: 17s;
 }
 .rfrp-bottom{
 	left: 550px;
 	top: 51px;
 	transform-origin: 2px 18px;
 	-webkit-animation-name: right-shake;
-	-webkit-animation-delay: 5s;
+	-webkit-animation-delay: 17s;
 }
 .tv-frame{
 	background-color: #000000;
@@ -151,7 +154,7 @@ div{
 	background-repeat: no-repeat;
 	-webkit-animation-name: reveal;
 	-webkit-animation-delay: 2s;
-	-webkit-animation-duration: 1s;
+	-webkit-animation-duration: 2s;
 	-webkit-animation-iteration-count: 1;
 }
 .tv, .video{
@@ -169,7 +172,7 @@ div{
 	-webkit-animation-duration: 1s;
 	-webkit-animation-iteration-count: 1;
 }
-/*@-webkit-keyframes clouds{
+@-webkit-keyframes clouds{
 	from{
 		background-position: right;
 	}
@@ -204,7 +207,7 @@ div{
 }
 @-webkit-keyframes signTransitionIn{
 	from{
-		bottom: -100px;
+		bottom: -130px;
 	}
 	to{
 		bottom: -5px;
@@ -251,7 +254,7 @@ div{
 	to{
 		transform: rotate(0deg);
 	}
-}*/
+}
 @-webkit-keyframes reveal{
 	from{
 		background-color: #000000;
