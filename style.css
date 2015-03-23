@@ -1,3 +1,6 @@
+body{
+	padding-top: 1em;
+}
 div{
 	width: 1064px;
 	height: 300px;
@@ -58,6 +61,90 @@ div{
 	-webkit-animation-iteration-count: 1;
 	-webkit-animation-timing-function: ease-out;
 }
+.palm-trees{
+	background-image: url('palm-trees.png');
+	background-repeat: no-repeat;
+}
+.palms{
+	position: absolute;
+	-webkit-animation-duration: .5s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-timing-function: ease-out;
+}
+.last-palm{
+	left: 0;
+	top: 30px;
+	transform-origin: 76px 49px;
+	-webkit-animation-name: left-shake;
+	-webkit-animation-delay: 5s;
+}
+.lbrp{
+	left: 175px;
+	top: 25px;
+	transform-origin: 1px 47px;
+	-webkit-animation-name: right-shake;
+	-webkit-animation-delay: 5s;
+}
+.lfrp-top{
+	left: 72px;
+	top: 32px;
+	transform-origin: 1px 49px;
+	-webkit-animation-name: right-shake;
+	-webkit-animation-delay: 5s;
+}
+.lfrp-bottom{
+	left: 89px;
+	top: 67px;
+	transform-origin: 0 21px;
+	-webkit-animation-name: right-shake;
+	-webkit-animation-delay: 5s;
+}
+.rblp-top{
+	left: 389px;
+	top: 14px;
+	transform-origin: 79px 46px;
+	-webkit-animation-name: rblp-top;
+	-webkit-animation-name: left-shake;
+	-webkit-animation-delay: 5s;
+}
+.rblp-bottom{
+	left: 374px;
+	top: 50px;
+	transform-origin: 85px 21px;
+	-webkit-animation-name: rblp-bottom;
+	-webkit-animation-name: left-shake;
+	-webkit-animation-delay: 5s;
+}
+.rflp-top{
+	left: 464px;
+	top: 20px;
+	transform-origin: 71px 30px;
+	-webkit-animation-name: rflp-top;
+	-webkit-animation-name: left-shake;
+	-webkit-animation-delay: 5s;
+}
+.rflp-bottom{
+	left: 450px;
+	top: 56px;
+	transform-origin: 80px 22px;
+	-webkit-animation-name: rflp-bottom;
+	-webkit-animation-name: left-shake;
+	-webkit-animation-delay: 5s;
+}
+.rfrp-top{
+	left: 545px;
+	top: 30px;
+	transform-origin: 0 36px;
+	-webkit-animation-name: right-shake;
+	-webkit-animation-delay: 5s;
+}
+.rfrp-bottom{
+	left: 550px;
+	top: 51px;
+	transform-origin: 2px 18px;
+	-webkit-animation-name: right-shake;
+	-webkit-animation-delay: 5s;
+}
 
 /*@-webkit-keyframes clouds{
 	from{
@@ -99,7 +186,7 @@ div{
 	to{
 		bottom: -5px;
 	}
-}*/
+}
 @-webkit-keyframes old-spice{
 	from{
 		width: 0;
@@ -108,3 +195,37 @@ div{
 		width: 100%;
 	}
 }
+@-webkit-keyframes left-shake{
+	from{
+		transform: rotate(0deg);
+	}
+	10%{
+		transform: rotate(5deg);
+	}
+	30%{
+		transform: rotate(-5deg);
+	}
+	60%{
+		transform: rotate(2deg);
+	}
+	to{
+		transform: rotate(0deg);
+	}
+}
+@-webkit-keyframes right-shake{
+	from{
+		transform: rotate(0deg);
+	}
+	10%{
+		transform: rotate(-5deg);
+	}
+	30%{
+		transform: rotate(5deg);
+	}
+	60%{
+		transform: rotate(-2deg);
+	}
+	to{
+		transform: rotate(0deg);
+	}
+}*/
