@@ -145,7 +145,30 @@ div{
 	-webkit-animation-name: right-shake;
 	-webkit-animation-delay: 5s;
 }
-
+.tv-frame{
+	background-color: #000000;
+	background-image: url('tv-frame.png');
+	background-repeat: no-repeat;
+	-webkit-animation-name: reveal;
+	-webkit-animation-delay: 2s;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-iteration-count: 1;
+}
+.tv, .video{
+	position: absolute;
+	left: 192px;
+	top: 141px;
+}
+.video{
+	width: 243px;
+	height: 140px;
+}
+.tv{
+	-webkit-animation-name: hide;
+	-webkit-animation-delay: 1s;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-iteration-count: 1;
+}
 /*@-webkit-keyframes clouds{
 	from{
 		background-position: right;
@@ -229,3 +252,21 @@ div{
 		transform: rotate(0deg);
 	}
 }*/
+@-webkit-keyframes reveal{
+	from{
+		background-color: #000000;
+	}
+	to{
+		background-color: transparent;
+	}
+}
+@-webkit-keyframes hide{
+	from{
+		width: 243px;
+		height: 140px;
+	}
+	to{
+		width: 243px;
+		height: 0;
+	}
+}

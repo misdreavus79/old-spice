@@ -25,11 +25,25 @@
 							<a class="sign">
 								<img src="sign.png">
 							</a>
+							<div class="tv-frame">
+								<img src="tv.png" class="tv">
+								<iframe src="http://www.youtube.com/watch?v=YlFl1OKRnEM" width="560" height="315" frameborder="0" class="video"></iframe>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+	<script>
+		setTimeout(function(){
+			document.querySelector('.tv').style.height = '0px';
+		}, 1000);
+		setTimeout(function(){
+			document.querySelector('.tv-frame').style.backgroundColor = 'transparent';
+			document.querySelector('palms').style.visibility = 'visible';
+		}, 2000);
+
+	</script>
 </body>
 </html>
