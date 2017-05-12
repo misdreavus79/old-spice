@@ -1,2 +1,2 @@
 # old-spice
-Old Spice ad animation using CSS3
+Old Spice banner ad animation using CSS3
